@@ -8,21 +8,16 @@ const rl = readline.createInterface({
 })
 
 
-rl.question('Write a data: ', function (date) {
+function WriteDate() {
 
-    const day = date.slice(0,2)
-    const month = date.slice(3,5)
-    const year  =  date.slice(6, )
+    rl.question('Write a data: ', function (date) {
 
-    console.log(`Dia: ${day}, Mês: ${month}, 'Ano': ${year} `)
-})
+        const day = date.slice(0, 2)
+        const month = date.slice(3, 5)
+        const year = date.slice(6,)
 
-function SplitDate() {
-    //const Date = UserWriteDate()
-
-    const SplitDate = 'dawd'
-
-    return SplitDate
+        console.log(`Dia: ${day}, Mês: ${month}, 'Ano': ${year} `)
+    })
 }
 
-SplitDate();
+WriteDate()
